@@ -1,5 +1,4 @@
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Player {
@@ -17,11 +16,11 @@ public class Player {
     public String nationality;
     public boolean isActive;
 
-    public Player()
+    public Player(String name, int dorsal, String teamName, String position, double weight, double height, String nationality, boolean isActive)
     {
         System.out.println("Player por Constructor");
-        name = leer.nextLine();
-        dorsal = leer.nextInt();
+        this.name = leer.nextLine();
+        this.dorsal = leer.nextInt();
         team = leer.next();
     }
 
